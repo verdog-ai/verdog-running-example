@@ -1,0 +1,9 @@
+from typing import Final
+from demo.countdown.subroutines.main.edges.check_counter__decrement import EDGE as CHECK_COUNTER__DECREMENT_EDGE
+from demo.countdown.subroutines.main.edges.check_counter__exit import EDGE as CHECK_COUNTER__EXIT_EDGE
+from demo.countdown.subroutines.main.edges.decrement__update_counter import EDGE as DECREMENT__UPDATE_COUNTER_EDGE
+from demo.countdown.subroutines.main.edges.enter__initialize_counter import EDGE as ENTER__INITIALIZE_COUNTER_EDGE
+from demo.countdown.subroutines.main.edges.initialize_counter__check_counter import EDGE as INITIALIZE_COUNTER__CHECK_COUNTER_EDGE
+from demo.countdown.subroutines.main.edges.update_counter__check_counter import EDGE as UPDATE_COUNTER__CHECK_COUNTER_EDGE
+
+EDGES: Final = (CHECK_COUNTER__DECREMENT_EDGE, CHECK_COUNTER__EXIT_EDGE, DECREMENT__UPDATE_COUNTER_EDGE, ENTER__INITIALIZE_COUNTER_EDGE, INITIALIZE_COUNTER__CHECK_COUNTER_EDGE, UPDATE_COUNTER__CHECK_COUNTER_EDGE)

@@ -1,0 +1,484 @@
+{
+  "schema_version": 32,
+  "package": "demo.countdown",
+  "generated_from": "3e5b20452e82b1e0e186ebe3680d105a9ab5c5c1a8a61f71d8e2c89701d3d1db",
+  "workflow": {
+    "subroutine": "main",
+    "profiles": [
+      {
+        "id": "decrementer",
+        "name": "Decrementer",
+        "provider": "codex",
+        "options": {
+          "model": null,
+          "reasoning_effort": null,
+          "extra_args": [],
+          "web_search": false
+        }
+      }
+    ],
+    "sessions": [],
+    "profile_arguments": {
+      "decrementer": "decrementer"
+    },
+    "session_arguments": {}
+  },
+  "externals": [],
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "ownership": "user",
+      "size": 6243,
+      "sha256": "456cd30eb54be9a15cd13f9e674b6980be5482a0a80180a947c4f3d933170df6"
+    },
+    {
+      "path": "pyproject.toml",
+      "ownership": "generated",
+      "size": 1259,
+      "sha256": "a886224ab70614e837605d965a675503d3b5e97f5b2387f0ddc9b54ac9d18573"
+    },
+    {
+      "path": "src/demo/countdown/README.md",
+      "ownership": "user",
+      "size": 679,
+      "sha256": "e337e0ae75763e60cac92c7e599ceb1e368f7f0e466bc4fa9d875b31960aef12"
+    },
+    {
+      "path": "src/demo/countdown/__init__.py",
+      "ownership": "generated",
+      "size": 63,
+      "sha256": "09dc2956af896f131b41703b3b78101b4208d16cf4e9e6b9891bba4fa3d432dc"
+    },
+    {
+      "path": "src/demo/countdown/impl.py",
+      "ownership": "user",
+      "size": 109,
+      "sha256": "c4e7b1655f72405f272a1bf1166439401ae2c19ae1581957392ca28507e9fb97"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/__init__.py",
+      "ownership": "generated",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/__init__.py",
+      "ownership": "generated",
+      "size": 3366,
+      "sha256": "7728ca7180f1401b37a2449dea8fa52ff7ad74fa47dc7b435124f20b91715d2d"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/edges/__init__.py",
+      "ownership": "generated",
+      "size": 939,
+      "sha256": "9ccaddf84d1ce306512c5ca3f82a12e01864b996956436a08380809eed5ed559"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/edges/check_counter__decrement/__init__.py",
+      "ownership": "generated",
+      "size": 642,
+      "sha256": "f5a1d1328980e4389b9990550c4b7c0ea2bf6fa186a4ec9f1fccf60d4f680727"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/edges/check_counter__exit/__init__.py",
+      "ownership": "generated",
+      "size": 760,
+      "sha256": "4265a6095bebb5477459a420e50f1236688e24540bf392de1061fdfb6cf1f2f1"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/edges/decrement__update_counter/__init__.py",
+      "ownership": "generated",
+      "size": 466,
+      "sha256": "e6597209e10439c08e19f787189597a7d261674b485af6ceb96c1b6eda759bb8"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/edges/enter__initialize_counter/__init__.py",
+      "ownership": "generated",
+      "size": 470,
+      "sha256": "242b9602a063c4167f979818a3a8dd881e5e0354442beef0d83f2533fd354ae2"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/edges/initialize_counter__check_counter/__init__.py",
+      "ownership": "generated",
+      "size": 671,
+      "sha256": "98bda339a2f83eb173a497a60f01984982c2b74d5a2ac3cd429704bf4685e96f"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/edges/update_counter__check_counter/__init__.py",
+      "ownership": "generated",
+      "size": 651,
+      "sha256": "6d9463ebcec5ff49a5d69dc0f3a3d7d485e4f69021d6abb174aad09e7fdc2c3b"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/features/__init__.py",
+      "ownership": "generated",
+      "size": 151,
+      "sha256": "b961e21ab1d45c1c91b3af6fe377dde157fc568ac7ef938e7b2a93fdd8f91b3b"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/features/counter/__init__.py",
+      "ownership": "generated",
+      "size": 359,
+      "sha256": "6dbe2c4c3c637f10b86975751dc114169daccd1078eb8fbb3b183df0417a4d90"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/impl.py",
+      "ownership": "user",
+      "size": 496,
+      "sha256": "33f1c424b7967a44268754b1b714bde76f074b52927e35da951a769ccdcf384d"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/__init__.py",
+      "ownership": "generated",
+      "size": 492,
+      "sha256": "e8b9063b41e80bcbe0c1b99fddcb2d605eb08c5a6bbfb3f2223d78b26466e521"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/check_counter/__init__.py",
+      "ownership": "generated",
+      "size": 347,
+      "sha256": "3ab58c60c7a8b3257fb045f815ec3266d9a228d3d1c3405dffbdae018e849c91"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/check_counter/impl.py",
+      "ownership": "user",
+      "size": 205,
+      "sha256": "935e7dc203e6c12d928b6f25b814ac805dee18ad8c6a641f06c7134db1d541b3"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/check_counter/visit/initialize_counter__check_counter/__init__.py",
+      "ownership": "generated",
+      "size": 565,
+      "sha256": "280ff8f2fd8ba45a17bdb799440888df423f801bcff475e8a176ee74d3c749d9"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/check_counter/visit/initialize_counter__check_counter/impl.py",
+      "ownership": "user",
+      "size": 214,
+      "sha256": "d88482714144360a6a5c2a65831fb0b0ee9c9e95a50a56ae1726faa55d2ec828"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/check_counter/visit/update_counter__check_counter/__init__.py",
+      "ownership": "generated",
+      "size": 591,
+      "sha256": "4ee949a5479d7f8a09a0a218845d9240c722050b4e7eccec240770ab8494baf9"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/check_counter/visit/update_counter__check_counter/impl.py",
+      "ownership": "user",
+      "size": 214,
+      "sha256": "d88482714144360a6a5c2a65831fb0b0ee9c9e95a50a56ae1726faa55d2ec828"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/decrement/__init__.py",
+      "ownership": "generated",
+      "size": 425,
+      "sha256": "ea839dcbf802963808427a3a9f43a92b06a759517e3706af4af24469a167dda9"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/decrement/impl.py",
+      "ownership": "user",
+      "size": 264,
+      "sha256": "fd6824070ea4c6afacf9d73571e86ed9af6a567c6bca6a8c7b3f8b228a5eff6d"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/decrement/visit/check_counter__decrement/__init__.py",
+      "ownership": "generated",
+      "size": 601,
+      "sha256": "914d83a6dcd379689bccaa172e5c815e4d9e392c246a14585c98efdb14092e7d"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/decrement/visit/check_counter__decrement/impl.py",
+      "ownership": "user",
+      "size": 736,
+      "sha256": "f832b97ce710b5b1591372539cf3f1ac74fa8859f55a15dce845e1c2cb4fb161"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/enter/__init__.py",
+      "ownership": "generated",
+      "size": 198,
+      "sha256": "7afd26cd3ce8e6d739fa4918c53c99d4915b88a8a5aa532d209f176c78762b52"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/exit/__init__.py",
+      "ownership": "generated",
+      "size": 197,
+      "sha256": "3712625e35c2aeee1ead4a874b73d3b88d5d1dd23db7abba12b94bf9d240bde2"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/failure/__init__.py",
+      "ownership": "generated",
+      "size": 200,
+      "sha256": "03df5050f6075120a3110a43c262f1474d7a8ad4e298975eda1053256198c0b5"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/initialize_counter/__init__.py",
+      "ownership": "generated",
+      "size": 289,
+      "sha256": "e9f6686b1f83bb6971e528f7c7f66a3b53cd403d2d19bcc9567488c45ebd5195"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/initialize_counter/visit/enter__initialize_counter/__init__.py",
+      "ownership": "generated",
+      "size": 600,
+      "sha256": "4089e67727bcc2711b6be60cd7ba8cc800e396e890469d365a77621885d31dcc"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/initialize_counter/visit/enter__initialize_counter/impl.py",
+      "ownership": "user",
+      "size": 386,
+      "sha256": "f22bbf5c26e96b8e02dc0c131c2466c700c312ff14867a467a9371d632940cfb"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/update_counter/__init__.py",
+      "ownership": "generated",
+      "size": 281,
+      "sha256": "7f05a4ae29c1a29a68cfa81bc631b79663cec3b8de5d001879e6e31faa7ae430"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/update_counter/visit/decrement__update_counter/__init__.py",
+      "ownership": "generated",
+      "size": 626,
+      "sha256": "af0ad0c215bb7c129446cf9a97df8734e62a81f31f3bb5d216aedfa6bfa5a64e"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/nodes/update_counter/visit/decrement__update_counter/impl.py",
+      "ownership": "user",
+      "size": 600,
+      "sha256": "0370c9ee359aac3221c9f1a772f3d8047452491bd534fae3c34c81c45157527a"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/profiles/__init__.py",
+      "ownership": "generated",
+      "size": 224,
+      "sha256": "d3ac7e4c0e91ba47d06b7fb62983d0cc583f6a1601223d0dc97c64700f89ad81"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/profiles/decrementer/__init__.py",
+      "ownership": "generated",
+      "size": 438,
+      "sha256": "c2291e73b97c056d32eb54888e7453cef49ec76fa64cd81e94cf83cee41dcaf5"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/sessions/__init__.py",
+      "ownership": "generated",
+      "size": 188,
+      "sha256": "14267168e08fb0018bf6ab486bb25359d2f8c7925266023bdf4d7badbf4e3a46"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/sessions/countdown/__init__.py",
+      "ownership": "generated",
+      "size": 270,
+      "sha256": "cd18cfd8f16573e9dda5d7351ce3d730cc2cdb1208ed30df2e30abb9c66c511a"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/subroutines/__init__.py",
+      "ownership": "generated",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/demo/countdown/subroutines/main/workflows/__init__.py",
+      "ownership": "generated",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/demo/countdown/workflows/__init__.py",
+      "ownership": "generated",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/demo/countdown/workflows/main/__init__.py",
+      "ownership": "generated",
+      "size": 1291,
+      "sha256": "6d0c956a234109d3b32a7e502331cdc7b85ec2fdbe14be5c9e4090e978365111"
+    },
+    {
+      "path": "src/demo/countdown/workflows/main/bindings/__init__.py",
+      "ownership": "generated",
+      "size": 244,
+      "sha256": "550f2c7e5566a66075d4d8156715cb5c2b6b0d3f042068f6143a8929c40b96c0"
+    },
+    {
+      "path": "src/demo/countdown/workflows/main/profiles/__init__.py",
+      "ownership": "generated",
+      "size": 339,
+      "sha256": "79b07e87791c2bfbd0edd04c4cd047c5ceef3c14a22a8690dff998615f263e97"
+    },
+    {
+      "path": "src/demo/countdown/workflows/main/profiles/decrementer/__init__.py",
+      "ownership": "generated",
+      "size": 244,
+      "sha256": "fa6e0cd9ea0633b0981cd84cba8a773a8ada4eb3c4de47ac807be78b4354d8bc"
+    },
+    {
+      "path": "src/demo/countdown/workflows/main/requirements.txt",
+      "ownership": "user",
+      "size": 15,
+      "sha256": "efdf4c65bb439b1a8c56dcb3184a59a28d11c7b8a7302c9c919c09afe1e1b2ca"
+    },
+    {
+      "path": "src/demo/countdown/workflows/main/sessions/__init__.py",
+      "ownership": "generated",
+      "size": 47,
+      "sha256": "89b438405ab711a5ddd14173a8f778af6b2979da47ab3386dd09d88e2f2e8c01"
+    }
+  ],
+  "editor": {
+    "layouts": {}
+  },
+  "extensions": {},
+  "subroutine": {
+    "id": "main",
+    "name": "Countdown",
+    "ports": {
+      "enter": "enter",
+      "exit": "exit",
+      "failure": "failure"
+    },
+    "features": [
+      {
+        "id": "counter",
+        "label": "Counter",
+        "description": "The current non-negative countdown value",
+        "kind": "integer"
+      }
+    ],
+    "profiles": [],
+    "profile_parameters": [
+      {
+        "id": "decrementer",
+        "name": "Decrementer"
+      }
+    ],
+    "sessions": [
+      {
+        "id": "countdown",
+        "name": "Countdown",
+        "persistent": true
+      }
+    ],
+    "session_parameters": [],
+    "nodes": [
+      {
+        "id": "enter",
+        "name": "Enter",
+        "kind": "enter",
+        "operation": {}
+      },
+      {
+        "id": "exit",
+        "name": "Exit",
+        "kind": "exit",
+        "operation": {}
+      },
+      {
+        "id": "failure",
+        "name": "Failure",
+        "kind": "failure",
+        "operation": {}
+      },
+      {
+        "id": "check_counter",
+        "name": "Check counter",
+        "kind": "python",
+        "operation": {}
+      },
+      {
+        "id": "decrement",
+        "name": "Decrement",
+        "kind": "agent",
+        "operation": {
+          "profile": "decrementer",
+          "session": "countdown"
+        }
+      },
+      {
+        "id": "initialize_counter",
+        "name": "Initialize counter",
+        "kind": "feature",
+        "operation": {}
+      },
+      {
+        "id": "update_counter",
+        "name": "Update counter",
+        "kind": "feature",
+        "operation": {}
+      }
+    ],
+    "edges": [
+      {
+        "id": "check_counter__decrement",
+        "name": "check counter to decrement",
+        "source": "check_counter",
+        "target": "decrement",
+        "conditions": [
+          {
+            "feature_id": "counter",
+            "observation": "greater_zero"
+          }
+        ],
+        "effects": []
+      },
+      {
+        "id": "check_counter__exit",
+        "name": "check counter to exit",
+        "source": "check_counter",
+        "target": "exit",
+        "conditions": [
+          {
+            "feature_id": "counter",
+            "observation": "equal_zero"
+          }
+        ],
+        "effects": []
+      },
+      {
+        "id": "decrement__update_counter",
+        "name": "decrement to update counter",
+        "source": "decrement",
+        "target": "update_counter",
+        "conditions": [],
+        "effects": []
+      },
+      {
+        "id": "enter__initialize_counter",
+        "name": "enter to initialize counter",
+        "source": "enter",
+        "target": "initialize_counter",
+        "conditions": [],
+        "effects": []
+      },
+      {
+        "id": "initialize_counter__check_counter",
+        "name": "initialize counter to check counter",
+        "source": "initialize_counter",
+        "target": "check_counter",
+        "conditions": [],
+        "effects": [
+          {
+            "feature_id": "counter",
+            "observation": "unconstrained"
+          }
+        ]
+      },
+      {
+        "id": "update_counter__check_counter",
+        "name": "update counter to check counter",
+        "source": "update_counter",
+        "target": "check_counter",
+        "conditions": [],
+        "effects": [
+          {
+            "feature_id": "counter",
+            "observation": "decreases"
+          }
+        ]
+      }
+    ],
+    "workflows": [],
+    "subroutines": []
+  }
+}
