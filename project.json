@@ -1,7 +1,7 @@
 {
   "schema_version": 32,
   "package": "demo.countdown",
-  "generated_from": "3e5b20452e82b1e0e186ebe3680d105a9ab5c5c1a8a61f71d8e2c89701d3d1db",
+  "generated_from": "96e1d29059fef4d6b9922960ec801fc040a185f1c1047fe3df2640f661a11cb9",
   "workflow": {
     "subroutine": "main",
     "profiles": [
@@ -12,8 +12,7 @@
         "options": {
           "model": null,
           "reasoning_effort": null,
-          "extra_args": [],
-          "web_search": false
+          "extra_args": []
         }
       }
     ],
@@ -310,8 +309,8 @@
     {
       "path": "src/demo/countdown/workflows/main/profiles/decrementer/__init__.py",
       "ownership": "generated",
-      "size": 244,
-      "sha256": "fa6e0cd9ea0633b0981cd84cba8a773a8ada4eb3c4de47ac807be78b4354d8bc"
+      "size": 226,
+      "sha256": "6e75bec9aa21af6cc0dcde40544d668b43da99ee8a34a2b48ebb47dd81600181"
     },
     {
       "path": "src/demo/countdown/workflows/main/requirements.txt",
