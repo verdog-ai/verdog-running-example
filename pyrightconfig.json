@@ -12,7 +12,8 @@
     "node_modules",
     "**/__pycache__",
     "**/__init__.py",
-    "external"
+    "external",
+    "**/fixtures"
   ],
   "reportMissingImports": "error",
   "reportMissingModuleSource": "error",
