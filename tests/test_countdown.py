@@ -20,8 +20,10 @@ class Decrementer:
     def __init__(self, decrement: int = 1) -> None:
         self.decrement = decrement
         self.values: list[int] = []
+        self.prompts: list[str] = []
 
     def __call__(self, request: AgentRequest, /) -> AgentReply:
+        self.prompts.append(request.prompt)
         value = int(request.prompt.split()[-1].rstrip("."))
         self.values.append(value)
         assert request.access == AgentAccess.READ_ONLY
@@ -49,6 +51,26 @@ class CountdownTest(unittest.TestCase):
                 ).run(workflow, Count(value=start), output_dir=Path(output))
                 self.assertEqual(result.output, Count(value=0))
                 self.assertEqual(agent.values, list(range(start, 0, -1)))
+
+    def test_the_prompt_renders_as_committed(self) -> None:
+        with TemporaryDirectory() as output:
+            agent = Decrementer()
+            workflow = replace(
+                definition(),
+                configuration=WorkflowConfiguration(
+                    profile_arguments={AgentProfileId("decrementer"): agent}
+                ),
+            )
+            Dispatcher(project_root=Path(__file__).resolve().parents[1]).run(
+                workflow, Count(value=2), output_dir=Path(output)
+            )
+        self.assertEqual(
+            agent.prompts,
+            [
+                "Return only the integer immediately before 2.",
+                "Return only the integer immediately before 1.",
+            ],
+        )
 
     def test_wrong_proposal_fails(self) -> None:
         with TemporaryDirectory() as output:
