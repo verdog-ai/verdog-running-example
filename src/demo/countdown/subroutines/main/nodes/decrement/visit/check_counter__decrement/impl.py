@@ -12,6 +12,8 @@ def visit_impl(input: Input, state: State, context: Context, /) -> Result:
     template = Template(
         Path(__file__).with_name("prompt.md.j2").read_text(encoding="utf-8"),
         undefined=StrictUndefined,
+        trim_blocks=True,
+        lstrip_blocks=True,
     )
     reply = context.invoke(
         template.render(value=input.value),

@@ -1,7 +1,7 @@
 {
   "schema_version": 33,
   "package": "demo.countdown",
-  "generated_from": "d0c3a606dfce8bcea812cb228c38623b725cd26b8a5836bfb199f4ab4f952d5c",
+  "generated_from": "d9408fe314640891ed0b0549ef7597d2e6b3aa124a5c75b42d8ea785022e1099",
   "workflows": [
     {
       "subroutine": "main",
@@ -191,8 +191,8 @@
     {
       "path": "src/demo/countdown/subroutines/main/nodes/decrement/visit/check_counter__decrement/impl.py",
       "ownership": "user",
-      "size": 736,
-      "sha256": "f832b97ce710b5b1591372539cf3f1ac74fa8859f55a15dce845e1c2cb4fb161"
+      "size": 790,
+      "sha256": "7623ef7034fbaf939a7fafb4b09fc637946c80e8760ef2a77ec6303b3f23bc9d"
     },
     {
       "path": "src/demo/countdown/subroutines/main/nodes/enter/__init__.py",
