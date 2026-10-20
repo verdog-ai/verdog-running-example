@@ -1,9 +1,9 @@
 """Exercise the complete graph without contacting a model provider."""
 
+import unittest
 from dataclasses import replace
 from pathlib import Path
 from tempfile import TemporaryDirectory
-import unittest
 
 from verdog_runtime.declarations import AgentAccess, WorkflowConfiguration
 from verdog_runtime.declarations.agents import AgentReply, AgentRequest
@@ -44,9 +44,9 @@ class CountdownTest(unittest.TestCase):
                         profile_arguments={AgentProfileId("decrementer"): agent}
                     ),
                 )
-                result = Dispatcher(project_root=Path(__file__).resolve().parents[1]).run(
-                    workflow, Count(value=start), output_dir=Path(output)
-                )
+                result = Dispatcher(
+                    project_root=Path(__file__).resolve().parents[1]
+                ).run(workflow, Count(value=start), output_dir=Path(output))
                 self.assertEqual(result.output, Count(value=0))
                 self.assertEqual(agent.values, list(range(start, 0, -1)))
 
@@ -55,13 +55,15 @@ class CountdownTest(unittest.TestCase):
             workflow = replace(
                 definition(),
                 configuration=WorkflowConfiguration(
-                    profile_arguments={AgentProfileId("decrementer"): Decrementer(0)}
+                    profile_arguments={
+                        AgentProfileId("decrementer"): Decrementer(0)
+                    }
                 ),
             )
             with self.assertRaisesRegex(ValueError, "exactly one lower"):
-                Dispatcher(project_root=Path(__file__).resolve().parents[1]).run(
-                    workflow, Count(value=3), output_dir=Path(output)
-                )
+                Dispatcher(
+                    project_root=Path(__file__).resolve().parents[1]
+                ).run(workflow, Count(value=3), output_dir=Path(output))
 
     def test_input_default_and_domain(self) -> None:
         self.assertEqual(Count().value, 10)
