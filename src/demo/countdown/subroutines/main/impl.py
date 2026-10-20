@@ -10,6 +10,7 @@ class Count:
     value: int = 10
 
     def __post_init__(self) -> None:
+        """Reject a negative value."""
         if self.value < 0:
             raise ValueError("the countdown value must be non-negative")
 

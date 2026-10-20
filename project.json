@@ -1,27 +1,29 @@
 {
-  "schema_version": 32,
+  "schema_version": 33,
   "package": "demo.countdown",
-  "generated_from": "96e1d29059fef4d6b9922960ec801fc040a185f1c1047fe3df2640f661a11cb9",
-  "workflow": {
-    "subroutine": "main",
-    "profiles": [
-      {
-        "id": "decrementer",
-        "name": "Decrementer",
-        "provider": "codex",
-        "options": {
-          "model": null,
-          "reasoning_effort": null,
-          "extra_args": []
+  "generated_from": "d0c3a606dfce8bcea812cb228c38623b725cd26b8a5836bfb199f4ab4f952d5c",
+  "workflows": [
+    {
+      "subroutine": "main",
+      "profiles": [
+        {
+          "id": "decrementer",
+          "name": "Decrementer",
+          "provider": "codex",
+          "options": {
+            "model": null,
+            "reasoning_effort": null,
+            "extra_args": []
+          }
         }
-      }
-    ],
-    "sessions": [],
-    "profile_arguments": {
-      "decrementer": "decrementer"
-    },
-    "session_arguments": {}
-  },
+      ],
+      "sessions": [],
+      "profile_arguments": {
+        "decrementer": "decrementer"
+      },
+      "session_arguments": {}
+    }
+  ],
   "externals": [],
   "sources": [
     {
@@ -34,7 +36,7 @@
       "path": "pyproject.toml",
       "ownership": "generated",
       "size": 1264,
-      "sha256": "1431862117dc33fa451f58ccc12c99387bc6fcac76009b28d5a745603e109995"
+      "sha256": "8882516f43e2a6adae107710b29320ec588e7568a0857413045808c5878fb5bb"
     },
     {
       "path": "src/demo/countdown/README.md",
@@ -51,8 +53,8 @@
     {
       "path": "src/demo/countdown/impl.py",
       "ownership": "user",
-      "size": 109,
-      "sha256": "c4e7b1655f72405f272a1bf1166439401ae2c19ae1581957392ca28507e9fb97"
+      "size": 110,
+      "sha256": "b943845712bd6208536a79d0cfb47a90cb8aff10f4cdf006b0a1d1d6134f4403"
     },
     {
       "path": "src/demo/countdown/subroutines/__init__.py",
@@ -123,8 +125,8 @@
     {
       "path": "src/demo/countdown/subroutines/main/impl.py",
       "ownership": "user",
-      "size": 496,
-      "sha256": "33f1c424b7967a44268754b1b714bde76f074b52927e35da951a769ccdcf384d"
+      "size": 535,
+      "sha256": "286c71dae21d928ab677259d7edd0de91588c9afb129b28e23eb920e28090c4d"
     },
     {
       "path": "src/demo/countdown/subroutines/main/nodes/__init__.py",
@@ -141,8 +143,8 @@
     {
       "path": "src/demo/countdown/subroutines/main/nodes/check_counter/impl.py",
       "ownership": "user",
-      "size": 205,
-      "sha256": "935e7dc203e6c12d928b6f25b814ac805dee18ad8c6a641f06c7134db1d541b3"
+      "size": 208,
+      "sha256": "3ee141b2b86253a36dfa16c41a5899912b102e194946cdf3762b3e68546ec2fe"
     },
     {
       "path": "src/demo/countdown/subroutines/main/nodes/check_counter/visit/initialize_counter__check_counter/__init__.py",
@@ -153,8 +155,8 @@
     {
       "path": "src/demo/countdown/subroutines/main/nodes/check_counter/visit/initialize_counter__check_counter/impl.py",
       "ownership": "user",
-      "size": 214,
-      "sha256": "d88482714144360a6a5c2a65831fb0b0ee9c9e95a50a56ae1726faa55d2ec828"
+      "size": 216,
+      "sha256": "f982649cc58b77366fa170a22e2b38cca70cb0027da5b375cbedb1fd69dc50bb"
     },
     {
       "path": "src/demo/countdown/subroutines/main/nodes/check_counter/visit/update_counter__check_counter/__init__.py",
@@ -165,8 +167,8 @@
     {
       "path": "src/demo/countdown/subroutines/main/nodes/check_counter/visit/update_counter__check_counter/impl.py",
       "ownership": "user",
-      "size": 214,
-      "sha256": "d88482714144360a6a5c2a65831fb0b0ee9c9e95a50a56ae1726faa55d2ec828"
+      "size": 216,
+      "sha256": "f982649cc58b77366fa170a22e2b38cca70cb0027da5b375cbedb1fd69dc50bb"
     },
     {
       "path": "src/demo/countdown/subroutines/main/nodes/decrement/__init__.py",
@@ -225,8 +227,8 @@
     {
       "path": "src/demo/countdown/subroutines/main/nodes/initialize_counter/visit/enter__initialize_counter/impl.py",
       "ownership": "user",
-      "size": 386,
-      "sha256": "f22bbf5c26e96b8e02dc0c131c2466c700c312ff14867a467a9371d632940cfb"
+      "size": 387,
+      "sha256": "f9ba3973eb18bb580892d0078a617778a987a060ef712aa4e6ed5c443a53df86"
     },
     {
       "path": "src/demo/countdown/subroutines/main/nodes/update_counter/__init__.py",
@@ -243,8 +245,8 @@
     {
       "path": "src/demo/countdown/subroutines/main/nodes/update_counter/visit/decrement__update_counter/impl.py",
       "ownership": "user",
-      "size": 600,
-      "sha256": "0370c9ee359aac3221c9f1a772f3d8047452491bd534fae3c34c81c45157527a"
+      "size": 601,
+      "sha256": "1435fb85ea6c96aa11f93aedaa25292dd4e568922fe694907464af8dfa783cc3"
     },
     {
       "path": "src/demo/countdown/subroutines/main/profiles/__init__.py",
@@ -329,155 +331,157 @@
     "layouts": {}
   },
   "extensions": {},
-  "subroutine": {
-    "id": "main",
-    "name": "Countdown",
-    "ports": {
-      "enter": "enter",
-      "exit": "exit",
-      "failure": "failure"
-    },
-    "features": [
-      {
-        "id": "counter",
-        "label": "Counter",
-        "description": "The current non-negative countdown value",
-        "kind": "integer"
-      }
-    ],
-    "profiles": [],
-    "profile_parameters": [
-      {
-        "id": "decrementer",
-        "name": "Decrementer"
-      }
-    ],
-    "sessions": [
-      {
-        "id": "countdown",
-        "name": "Countdown",
-        "persistent": true
-      }
-    ],
-    "session_parameters": [],
-    "nodes": [
-      {
-        "id": "enter",
-        "name": "Enter",
-        "kind": "enter",
-        "operation": {}
+  "subroutines": [
+    {
+      "id": "main",
+      "name": "Countdown",
+      "ports": {
+        "enter": "enter",
+        "exit": "exit",
+        "failure": "failure"
       },
-      {
-        "id": "exit",
-        "name": "Exit",
-        "kind": "exit",
-        "operation": {}
-      },
-      {
-        "id": "failure",
-        "name": "Failure",
-        "kind": "failure",
-        "operation": {}
-      },
-      {
-        "id": "check_counter",
-        "name": "Check counter",
-        "kind": "python",
-        "operation": {}
-      },
-      {
-        "id": "decrement",
-        "name": "Decrement",
-        "kind": "agent",
-        "operation": {
-          "profile": "decrementer",
-          "session": "countdown"
+      "features": [
+        {
+          "id": "counter",
+          "label": "Counter",
+          "description": "The current non-negative countdown value",
+          "kind": "integer"
         }
-      },
-      {
-        "id": "initialize_counter",
-        "name": "Initialize counter",
-        "kind": "feature",
-        "operation": {}
-      },
-      {
-        "id": "update_counter",
-        "name": "Update counter",
-        "kind": "feature",
-        "operation": {}
-      }
-    ],
-    "edges": [
-      {
-        "id": "check_counter__decrement",
-        "name": "check counter to decrement",
-        "source": "check_counter",
-        "target": "decrement",
-        "conditions": [
-          {
-            "feature_id": "counter",
-            "observation": "greater_zero"
+      ],
+      "profiles": [],
+      "profile_parameters": [
+        {
+          "id": "decrementer",
+          "name": "Decrementer"
+        }
+      ],
+      "sessions": [
+        {
+          "id": "countdown",
+          "name": "Countdown",
+          "persistent": true
+        }
+      ],
+      "session_parameters": [],
+      "nodes": [
+        {
+          "id": "enter",
+          "name": "Enter",
+          "kind": "enter",
+          "operation": {}
+        },
+        {
+          "id": "exit",
+          "name": "Exit",
+          "kind": "exit",
+          "operation": {}
+        },
+        {
+          "id": "failure",
+          "name": "Failure",
+          "kind": "failure",
+          "operation": {}
+        },
+        {
+          "id": "check_counter",
+          "name": "Check counter",
+          "kind": "python",
+          "operation": {}
+        },
+        {
+          "id": "decrement",
+          "name": "Decrement",
+          "kind": "agent",
+          "operation": {
+            "profile": "decrementer",
+            "session": "countdown"
           }
-        ],
-        "effects": []
-      },
-      {
-        "id": "check_counter__exit",
-        "name": "check counter to exit",
-        "source": "check_counter",
-        "target": "exit",
-        "conditions": [
-          {
-            "feature_id": "counter",
-            "observation": "equal_zero"
-          }
-        ],
-        "effects": []
-      },
-      {
-        "id": "decrement__update_counter",
-        "name": "decrement to update counter",
-        "source": "decrement",
-        "target": "update_counter",
-        "conditions": [],
-        "effects": []
-      },
-      {
-        "id": "enter__initialize_counter",
-        "name": "enter to initialize counter",
-        "source": "enter",
-        "target": "initialize_counter",
-        "conditions": [],
-        "effects": []
-      },
-      {
-        "id": "initialize_counter__check_counter",
-        "name": "initialize counter to check counter",
-        "source": "initialize_counter",
-        "target": "check_counter",
-        "conditions": [],
-        "effects": [
-          {
-            "feature_id": "counter",
-            "observation": "unconstrained"
-          }
-        ]
-      },
-      {
-        "id": "update_counter__check_counter",
-        "name": "update counter to check counter",
-        "source": "update_counter",
-        "target": "check_counter",
-        "conditions": [],
-        "effects": [
-          {
-            "feature_id": "counter",
-            "observation": "decreases"
-          }
-        ]
-      }
-    ],
-    "workflows": [],
-    "subroutines": []
-  }
+        },
+        {
+          "id": "initialize_counter",
+          "name": "Initialize counter",
+          "kind": "feature",
+          "operation": {}
+        },
+        {
+          "id": "update_counter",
+          "name": "Update counter",
+          "kind": "feature",
+          "operation": {}
+        }
+      ],
+      "edges": [
+        {
+          "id": "check_counter__decrement",
+          "name": "check counter to decrement",
+          "source": "check_counter",
+          "target": "decrement",
+          "conditions": [
+            {
+              "feature_id": "counter",
+              "observation": "greater_zero"
+            }
+          ],
+          "effects": []
+        },
+        {
+          "id": "check_counter__exit",
+          "name": "check counter to exit",
+          "source": "check_counter",
+          "target": "exit",
+          "conditions": [
+            {
+              "feature_id": "counter",
+              "observation": "equal_zero"
+            }
+          ],
+          "effects": []
+        },
+        {
+          "id": "decrement__update_counter",
+          "name": "decrement to update counter",
+          "source": "decrement",
+          "target": "update_counter",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "enter__initialize_counter",
+          "name": "enter to initialize counter",
+          "source": "enter",
+          "target": "initialize_counter",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "initialize_counter__check_counter",
+          "name": "initialize counter to check counter",
+          "source": "initialize_counter",
+          "target": "check_counter",
+          "conditions": [],
+          "effects": [
+            {
+              "feature_id": "counter",
+              "observation": "unconstrained"
+            }
+          ]
+        },
+        {
+          "id": "update_counter__check_counter",
+          "name": "update counter to check counter",
+          "source": "update_counter",
+          "target": "check_counter",
+          "conditions": [],
+          "effects": [
+            {
+              "feature_id": "counter",
+              "observation": "decreases"
+            }
+          ]
+        }
+      ],
+      "workflows": [],
+      "subroutines": []
+    }
+  ]
 }
