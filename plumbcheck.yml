@@ -1,2 +1,15 @@
-# verdog-ai's standards (plumbcheck); override keys below.
-EXTENDS: https://raw.githubusercontent.com/verdog-ai/standards/bfb6d17992ba011b4733e1ff87e27331e269fd7b/plumbcheck.yml
+# plumbcheck's configuration (https://github.com/drexlerd/plumbcheck): only
+# what differs from its defaults; every linter of its catalogue runs on the
+# files it checks. The linters read this repository's own configurations.
+
+# A Verdog project's project.json lists the files its compiler generates;
+# lint never checks them.
+GENERATED:
+  file: project.json
+  list: sources
+  path: path
+  where: {ownership: generated}
+
+# Only the syntax (S0) and one statement per line (S7); j2lint's layout
+# rules (spacing, indentation, variable names) are not ours.
+J2LINT_ARGUMENTS: [--ignore, S1, S2, S3, S4, S5, S6, V1, V2, --]
